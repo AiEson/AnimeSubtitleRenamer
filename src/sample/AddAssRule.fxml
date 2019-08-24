@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="inLay" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddAssRuleController">
+    <top>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" StackPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="inLable" text="请输入您的规则：如字幕名称叫 [xxx]xxx123[01]xxx.ass，&#10;请在第一个框中输入 &quot;[xxx]xxx123[&quot; ，在第二个框中输入&quot;]&quot; " />
+                        <TextField fx:id="inFirstAssRule">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin></TextField>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding></StackPane>
+    </top>
+    <center>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="inSecAssRule" />
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </StackPane>
+    </center>
+    <bottom>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="inRuleAssButton" mnemonicParsing="false" text="Button" />
+            </children>
+        </StackPane>
+    </bottom>
+</BorderPane>

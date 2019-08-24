@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AboutAPPController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="200.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="109.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="本软件是由WvT工作室开发者 青铜火机和电吹风单独开发">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="如果有BUG欢迎加我QQ，并且在好友验证处注明" />
+      <Text layoutX="184.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="软件随缘更新，最新进度请跟进我的GitHub" />
+   </children>
+</AnchorPane>

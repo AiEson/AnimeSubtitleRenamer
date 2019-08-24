@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="操作">
+              <items>
+                  <MenuItem fx:id="menuItemClearPath" mnemonicParsing="false" text="清空选择文件路径" />
+              </items>
+            <items>
+              <MenuItem fx:id="menuItemCloseAPP" mnemonicParsing="false" text="关闭软件" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="帮助">
+            <items>
+              <MenuItem fx:id="menuItemAboutAPP" mnemonicParsing="false" text="关于本软件" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+    <bottom>
+        <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" StackPane.alignment="CENTER">
+               <children>
+      
+                        <Button fx:id="buttonL" contentDisplay="CENTER" mnemonicParsing="false" text="应用重命名" />
+                        <Button fx:id="buttonR" mnemonicParsing="false" text="选择文件夹" />
+               </children>
+            </HBox>
+
+         </children></StackPane>
+    </bottom>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listViewL" prefHeight="402.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
